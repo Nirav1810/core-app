@@ -8,3 +8,9 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Add any project specific keep options here:
+-keep public class com.horcrux.svg.** {*;}
+-keep class okhttp3.** { *; }
+-keep interface okhttp3.** { *; }
+-keep class okio.** { *; }
+-keep class com.facebook.react.modules.network.OkHttpClientProvider { *; }
+-keep public class com.BV.LinearGradient.** {*;}

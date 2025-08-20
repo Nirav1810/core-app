@@ -1,9 +1,7 @@
 # OSX
-#
 .DS_Store
 
 # Xcode
-#
 build/
 *.pbxuser
 !default.pbxuser
@@ -23,28 +21,31 @@ DerivedData
 **/.xcode.env.local
 
 # Android/IntelliJ
-#
-build/
-.idea
-.gradle
+.idea/
+.gradle/
+/android/build/
+/android/app/build/
 local.properties
 *.iml
 *.hprof
 .cxx/
-*.keystore
-!debug.keystore
 .kotlin/
 
+# --- SENSITIVE ANDROID RELEASE FILES ---
+# The private key for signing your app. NEVER commit this.
+/android/app/my-upload-key.keystore
+
+# This file contains the passwords for your keystore.
+/android/gradle.properties
+
 # node.js
-#
 node_modules/
 npm-debug.log
 yarn-error.log
+.pnp.*
 
 # fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
+# [cite_start]It is recommended to not store the screenshots in the git repo. [cite: 2] [cite_start]Instead, use fastlane to re-generate the screenshots whenever they are needed. [cite: 2]
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/
 
